@@ -1,0 +1,51 @@
+{
+  "name": "reddit-gemini-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Reddit-Gemini solution app",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": "knex migrate:rollback",
+    "db:seed": "knex seed:run",
+    "db:reset": "knex migrate:rollback --all && knex migrate:latest && knex seed:run",
+    "db:status": "knex migrate:currentVersion",
+    "db:make-migration": "knex migrate:make",
+    "db:make-seed": "knex seed:make"
+  },
+  "keywords": ["reddit", "gemini", "ai", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0",
+    "snoowrap": "^1.23.0",
+    "@google/generative-ai": "^0.2.1",
+    "googleapis": "^128.0.0",
+    "google-spreadsheet": "^4.1.2",
+    "google-auth-library": "^9.4.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "joi": "^17.11.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1",
+    "cookie-parser": "^1.4.6",
+    "pg": "^8.11.3",
+    "pg-pool": "^3.6.1",
+    "knex": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

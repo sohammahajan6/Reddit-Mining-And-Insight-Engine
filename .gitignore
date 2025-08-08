@@ -1,0 +1,347 @@
+# Reddit AI Solution Generator - .gitignore
+
+# ===================================
+# Environment Variables & Secrets
+# ===================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example.filled
+
+# API Keys and Credentials
+**/config/secrets.js
+**/config/credentials.json
+google-credentials.json
+reddit-credentials.json
+gemini-api-key.txt
+service-account-key.json
+
+# ===================================
+# Node.js Dependencies
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===================================
+# React Build & Development
+# ===================================
+# Production builds
+build/
+dist/
+out/
+
+# Development
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+
+# React specific
+frontend/build/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ===================================
+# Backend Specific
+# ===================================
+backend/build/
+backend/dist/
+# User uploads (keep structure, ignore content)
+backend/uploads/**/*
+!backend/uploads/.gitkeep
+!backend/uploads/*/.gitkeep
+
+# Logs
+backend/logs/
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===================================
+# Database
+# ===================================
+# PostgreSQL
+*.sql
+*.dump
+*.backup
+database.sqlite
+database.sqlite3
+
+# Database dumps and backups
+db_backup/
+db_dumps/
+*.db
+*.sqlite
+
+# ===================================
+# IDE & Editor Files
+# ===================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===================================
+# Operating System Files
+# ===================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# Testing & Coverage
+# ===================================
+coverage/
+*.lcov
+.nyc_output/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.jest/
+
+# Test results
+test-results/
+test-reports/
+junit.xml
+
+# ===================================
+# Temporary & Cache Files
+# ===================================
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# ===================================
+# Documentation & Generated Files
+# ===================================
+# Auto-generated documentation
+docs/api/
+docs/build/
+docs/_build/
+
+# Generated files
+*.generated.js
+*.generated.ts
+*.auto.js
+
+# ===================================
+# Deployment & Production
+# ===================================
+# Production artifacts
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+
+# Deployment scripts with secrets
+deploy-secrets.sh
+production-deploy.sh
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# ===================================
+# Analytics & Monitoring
+# ===================================
+# Google Analytics
+ga-credentials.json
+
+# Monitoring tools
+newrelic.js
+.newrelic.yml
+
+# ===================================
+# Miscellaneous
+# ===================================
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.test
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ===================================
+# Project Specific
+# ===================================
+# Reddit API cache
+reddit-cache/
+*.reddit-cache
+
+# Gemini AI cache
+gemini-cache/
+*.gemini-cache
+
+# Google Sheets cache
+sheets-cache/
+*.sheets-cache
+
+# Note: uploads handled in Backend Specific section above
+
+# Analytics data
+analytics-data/
+*.analytics
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Local development files
+local-config.js
+local-settings.json
+dev-notes.md
+todo.md
+
+# ===================================
+# Security & Sensitive Data
+# ===================================
+# Private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Certificates
+*.crt
+*.cer
+*.der
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# GPG keys
+*.gpg
+*.asc
+
+# Legacy secret patterns (extra safety)
+**/secrets/
+**/*secret*
+**/*key*
+**/*credential*
+
+# ===================================
+# End of .gitignore
+# ===================================
