@@ -163,7 +163,7 @@ reddit-ai-solution/
 
 ```bash
 # Clone and setup
-git clone <your-repo-url>
+git clone https://github.com/sohammahajan6/Reddit-Mining-And-Insight-Engine.git
 cd reddit-ai-solution
 npm run setup
 
@@ -334,12 +334,6 @@ curl http://localhost:3001/api/sheets/health
 - Development: Local PostgreSQL, development API keys
 - Staging: Staging database, test API credentials
 - Production: Production database, live API keys, SSL
-
-## 📝 **Documentation**
-
-- **[SETUP.md](SETUP.md)**: Detailed setup instructions
-- **[DATABASE_SETUP.md](backend/DATABASE_SETUP.md)**: Database configuration
-- **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)**: Complete feature overview
 
 ## 🆘 **Support**
 
