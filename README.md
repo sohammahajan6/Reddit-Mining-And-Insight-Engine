@@ -341,13 +341,6 @@ curl http://localhost:3001/api/sheets/health
 - **[DATABASE_SETUP.md](backend/DATABASE_SETUP.md)**: Database configuration
 - **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)**: Complete feature overview
 
-## 🤝 **Contributing**
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes with tests
-4. Submit a pull request with detailed description
-
 ## 🆘 **Support**
 
 For issues and questions:
